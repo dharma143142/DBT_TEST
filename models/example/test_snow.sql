@@ -1,0 +1,1 @@
+select 1 emp_id ,'dharma' emp_name,'hyd' city
