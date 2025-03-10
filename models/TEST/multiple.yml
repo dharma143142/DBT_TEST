@@ -12,6 +12,5 @@ sources:
     schema: SAMPLE_DB2_SCHEMA
     database: SAMPLE_DB2
     tables:
-      - name: INVOICELINE
-        identifier: INVOICELINE
-
+      - name: InvoiceLine
+        identifier: InvoiceLine
