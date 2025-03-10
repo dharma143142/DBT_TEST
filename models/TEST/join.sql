@@ -1,4 +1,4 @@
-SELECT 
+ SELECT 
     ih.InvoiceID,
     ih.CustomerID,
     ih.InvoiceTotal,
@@ -8,3 +8,10 @@ SELECT
 FROM {{ source('SAMPLE_DB1_SCHEMA', 'InvoiceHeader') }} ih
 JOIN {{ source('SAMPLE_DB2_SCHEMA', 'InvoiceLine') }} il
     ON ih.InvoiceID = il.InvoiceID
+
+{{ 
+    config(
+        materialized='view',
+        schema='SAMPLE_DB1_SCHEMA'
+    ) 
+}}
