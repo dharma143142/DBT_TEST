@@ -1,6 +1,8 @@
 
 
-{{config(materalized='view',schema='sample_schema')}}
+{{
+    config(materalized='table',schema='sample_schema')
+    }}
 
 
 

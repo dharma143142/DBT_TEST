@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: SAMPLE_SCHEMA
+    schema: SAMPLE_SCHEMA
+    database: SAMPLE_DB
+    tables:
+      - name: "order"
+        identifier: "order"
+      - name: ORDER_ITEMS
+        identifier: ORDER_ITEMS
