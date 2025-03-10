@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: SAMPLE_DB1_SCHEMA
+    schema: SAMPLE_DB1_SCHEMA
+    database: SAMPLE_DB1
+    tables:
+      - name: InvoiceHeader
+        identifier: InvoiceHeader
+  
+  - name: SAMPLE_DB2_SCHEMA
+    schema: SAMPLE_DB2_SCHEMA
+    database: SAMPLE_DB2
+    tables:
+      - name: INVOICELINE
+        identifier: INVOICELINE
+
